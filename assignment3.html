@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+<body>
+<h1 style="text-align: center;font-size: 40px;color: red">Assignment 3</h1>
+<table id="customers">
+  <tr>
+    <th style="font-size: 15pt">Company</th>
+    <th style="font-size: 15pt">Contact</th>
+    <th style="font-size: 15pt">Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbk&#246p</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>K&#246niglich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris sp&#233cialit&#233s</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+  <tr>
+    <td>The Big Cheese</td>
+    <td>Liz Nixon</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Vaffeljernet</td>
+    <td>Palle Ibsen</td>
+    <td>Denmark</td>
+  </tr>
+</table>
+<p class="qanda">Questions & Answers</p>
+<p class="question">Question#8<br>How would you create a simple two-row, two column table with a  standard border?</p>
+<p class="answer">To create this type of table, this format/code may be used and text can be inserted into the slots where it says &#8220TextHere&#8221. Adding a standard border comes without adding coding.</p>
+<p class="answer">&lttable&gt<br>&lttr&gt<br>&ltth&gtTextHere&lt/th&gt<br>&ltth&gtTextHere&lt/th&gt<br>&lt/tr&gt<br>&lttr&gt<br>&lttd&gtTextHere&lt/td&gt<br>&lttd&gtTextHere&lt/td&gt<br>&lt/tr&gt<br>&lt/table&gt</p>
+<p class="question">Question #9<br>How would you add 30 pixels of space between the table border and the cells?</p>
+<p class="answer">In HTML:<br><br>&lttable class=&#8220border&#8221&gt<br>&lttr&gt<br>&ltth&gtTextHere&lt/th&gt<br>&ltth&gtTextHere&lt/th&gt<br>&lt/tr&gt<br>&lttr&gt<br>&lttd&gtTextHere&lt/td&gt<br>&lttd&gtTextHere&lt/td&gt<br>&lt/tr&gt<br>&lt/table&gt</p>
+<p class="answer">In CSS:<br><br>table.border&#123<br>&nbsp&nbsp&nbsp&nbspborder-spacing:30px;<br>&#125</p>
+<p class="question">Question #10<br><br>How would you make the top-left cell green, the top-right cell red, the bottom left cell yellow and the bottom right cell blue?</p>
+<p class="answer">In HTML:<br><br>&lttable&gt<br>&lttr&gt<br>&ltth class="green"&gtThis Text is Green&lt/th&gt<br>&ltth class="red"&gtThis Text is Red&lt/th&gt<br>&lt/tr&gt<br>&lttr&gt<br>&lttd class="yellow"&gtThis Text Is Yellow&lt/td&gt<br>&lttd class="blue"&gtThis text is Blue&lt/td&gt<br>&lt/tr&gt<br>&lt/table&gt</p>
+<p class="answer">In CSS:<br><br>th.green &#123<br>&nbsp&nbsp&nbsp&nbspbackground-color: green;<br>&#125<br>th.red &#123<br>&nbsp&nbsp&nbsp&nbspbackground-color:red;<br>&#125<br>td.yellow &#123<br>&nbsp&nbsp&nbsp&nbspbackground-color:yellow;<br>&#125<br>td.blue &#123<br>&nbsp&nbsp&nbsp&nbspbackground-color:blue;<br>&#125</p>
+<p class="question">Question #11<br>How would you give a web page a black background and make all text bright green?</p>
+<p class="answer">You may do this by adding the style background-color and color into the body tag as shown:<br>&ltbody style="background-color:black;color:green"&gt</p>
+<p class="question">Question #12<br>If you specify background-color #FFFFFF for the body element in your style sheet, then use background-color #FF0000 for the first &ltdiv&gt that you use on your page, will the background of that &ltdiv&gt be red or white? Why?</p>
+<p class="answer">Red will show up as specific tags unlike a general body tag takes priority. This makes it possible so if you want the whole page to be let us say white but certain sections or tags to be another color/colors.</p>
+<p class="question">Question #13<br>To place two &ltdiv&gt elements next to each other, but with a 30pixel margin between them, what entry or entries can you use in the style sheet?</p>
+<p class="answer">If both elements are next to each other, a margin property may be added to the tag. This is shown by margin-left, margin-right, margin-top, or margin-bottom. Then the amount of space may be added. So if I want the space between the two to be 50 pixels, I can add in CSS:<br><br>div.leftdiv &#123<br>&nbsp&nbsp&nbsp&nbspmargin-right:25px<br>&#125<br>div.rightdiv &#123<br>&nbsp&nbsp&nbsp&nbspmargin-left:25px<br>&#125</p>
+<p class="question">Question #14<br>Which CSS style property and value is used to ensure that content does not appear to the left of a floating element?</p>
+<p class="answer">To ensure content does not appear to the left of the floating element, this code may be used in CSS:<br><br>name&#123<br>&nbsp&nbsp&nbsp&nbspfloat: left;<br>&#125</p>
+<p class="question">Question #15<br>What style sheet entry is used to place text within a &ltdiv&gt to appear 12 pixels from the top of the element?</p>
+<p class="answer">To do this, you may use this code in the HTML &ltdiv&gt tag:<br><br>div &#123<br>&nbsp&nbsp&nbsp&nbsppadding-top:12px;<br>&#125</p>
+<p class="question">Question #16<br>What's the difference between relative positioning and absolute positioning?</p>
+<p class="answer">Relative positioning positions an element in relation to another. So for example, if you wanted to position a heading 15 pixels above the first paragraph. Absolute positioning measures the exact coordinates of where the element will go regardless if there is already something in that spot.</p>
+<p class="question">Question #17<br>Which CSS style property controls the manner in which elements overlap each other?</p>
+<p class="answer">The z-index controls which order the elements overlap. The higher the number, the higher the priority which means that it will show up on top of any lower ones.</p>
+<p class="question">Question #18<br>What HTML code could you use to display the words &#8220Where would you like to&#8221 starting exactly at the upper-left corner of the browser window and displays the words &#8220Go Today?&#8221 in large type exactly 80 pixels down and 20 pixels to the left of the corner?</p>
+<p class="answer">&ltp style="position: fixed;left:0px;top:0px"&gtWhere would you like to&lt/p&gt<br>&lth1 style="position: fixed;left:20px;top:80px;"&gtGo Today?&lt/h1&gt</p>
+</body>
+</html>
