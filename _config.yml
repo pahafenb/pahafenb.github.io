@@ -5,6 +5,7 @@ description: A comprehenisve add-on to my resume> # this means to ignore newline
 baseurl: "patrickhafenberg.me" # the subpath of your site, e.g. /blog/
 url: "patrickhafenberg.me" # the base hostname & protocol for your site
 
+linkedin_username: patrickhafenberg
 github_username: pahafenb
 
 # Build settings
